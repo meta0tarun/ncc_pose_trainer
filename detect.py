@@ -62,7 +62,12 @@ pose_choice = st.selectbox(
 
 # ─── WebRTC Configuration ───────────────────────────────────────
 rtc_config = RTCConfiguration({
-    "iceServers": [{"urls": ["stun:stun.l.google.com:19302"]}]
+    "iceServers": [
+        {"urls": ["stun:stun.l.google.com:19302"]},
+        {"urls": ["turn:relay1.expressturn.com:3478"],
+         "username": "efYqJb8ZxvM3WkDElO",
+         "credential": "A9W6y5P1sH7uGzK2"}
+    ]
 })
 
 # ─── Salute Pose Detection ───────────────────────────────────────
