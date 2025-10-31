@@ -49,14 +49,13 @@ wrong_tone = base64.b64decode(
 )
 
 # ─── Page Layout ─────────────────────────────────────────────
-st.title("🎖️ NCC Posture Trainer")
+st.title("🎖️ NCC Drill Trainer")
 st.markdown("""
-Choose a posture to begin real-time AI evaluation.  
-This version works on both desktop **and mobile browsers** via WebRTC.
+Choose a drill to begin real-time AI Training.
 """)
 
 pose_choice = st.selectbox(
-    "Select a Pose to Practice 👇",
+    "Select a Drill to Practice 👇",
     ["Select", "Salute", "Attention", "Stand-at-Ease"]
 )
 
